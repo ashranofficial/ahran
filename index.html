@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discode Item</title>
+    <title>Portfolio Command Center</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,86 +14,316 @@
   </head>
   <body>
     <main class="page">
+      <nav class="top-nav">
+        <div class="brand">
+          <span class="logo">AN</span>
+          <div>
+            <p>Aria Nguyen</p>
+            <span>Portfolio command center</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#management">Management</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="secondary">Schedule intro</button>
+      </nav>
       <header class="hero">
-        <div>
-          <p class="badge">New drop</p>
-          <h1>Discode Item Studio</h1>
+        <div class="hero-content" id="overview">
+          <p class="badge">Portfolio command center</p>
+          <h1>Manage your creative world in one place.</h1>
           <p class="subtitle">
-            Design bold, collectible items for your community. Share them with your squad, earn
-            reactions, and power up every drop.
+            A modern portfolio that tracks your projects, client updates, and growth goals without
+            breaking focus. Showcase your work and stay on top of everything that moves your
+            business forward.
           </p>
           <div class="cta-row">
-            <button class="primary">Create item</button>
-            <button class="ghost">View gallery</button>
+            <button class="primary">Book a call</button>
+            <button class="ghost">Download resume</button>
           </div>
           <div class="stats">
             <div>
-              <h3>42k+</h3>
-              <span>Items crafted</span>
+              <h3>12+</h3>
+              <span>Active clients</span>
             </div>
             <div>
-              <h3>8.4k</h3>
-              <span>Active crews</span>
+              <h3>38</h3>
+              <span>Projects shipped</span>
             </div>
             <div>
-              <h3>95%</h3>
-              <span>Reaction rate</span>
+              <h3>96%</h3>
+              <span>On-time delivery</span>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <span>Featured item</span>
+        <div class="panel">
+          <div class="panel-header">
+            <span>Weekly overview</span>
             <span class="dot"></span>
           </div>
-          <div class="card-body">
-            <div class="orb"></div>
-            <h2>Echo Pulse</h2>
-            <p>
-              A glowing token that amplifies voice chats with animated waves and shimmering
-              gradients.
-            </p>
-            <ul>
-              <li>Interactive glow layers</li>
-              <li>Auto-resizes for threads</li>
-              <li>Custom emoji slots</li>
-            </ul>
+          <div class="panel-body">
+            <div class="meter">
+              <div class="meter-label">
+                <span>Focus time</span>
+                <strong>28h</strong>
+              </div>
+              <div class="meter-bar">
+                <span class="meter-fill"></span>
+              </div>
+            </div>
+            <div class="overview-grid">
+              <div>
+                <p>Client reviews</p>
+                <h3>7</h3>
+              </div>
+              <div>
+                <p>Invoices sent</p>
+                <h3>5</h3>
+              </div>
+              <div>
+                <p>Next milestone</p>
+                <h3>Mon</h3>
+              </div>
+              <div>
+                <p>Pending tasks</p>
+                <h3>12</h3>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <span>Updated 2h ago</span>
-            <button class="secondary">Duplicate</button>
+          <div class="panel-footer">
+            <span>Updated 10m ago</span>
+            <button class="secondary">View dashboard</button>
           </div>
         </div>
       </header>
-      <section class="live">
-        <div class="live-card">
+
+      <section class="section">
+        <div class="section-header">
           <div>
-            <p class="eyebrow">Live website</p>
-            <h2>Launch your Discode item drop</h2>
-            <p class="subtitle">
-              Publish your item page instantly and share a live link with your community. Customize
-              the drop title, add a countdown, and track reactions in real time.
-            </p>
+            <p class="eyebrow">About</p>
+            <h2>Hi, I’m Aria Nguyen — product designer & strategist.</h2>
           </div>
-          <div class="live-actions">
-            <div class="live-link">
-              <span>discode.app/item/echo-pulse</span>
-              <span class="pill">live</span>
+          <p class="subtitle">
+            I build end-to-end experiences for ambitious teams, with a focus on clarity, calm, and
+            conversion. My workflow blends research, prototyping, and system design to keep products
+            aligned as they scale.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>Design systems</h3>
+            <p>Unified libraries, tokens, and guidelines that keep teams moving in sync.</p>
+          </article>
+          <article class="info-card">
+            <h3>Product strategy</h3>
+            <p>Roadmaps and launch plans that keep stakeholders aligned and confident.</p>
+          </article>
+          <article class="info-card">
+            <h3>Creative direction</h3>
+            <p>Hands-on art direction for campaigns, content, and multi-platform launches.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="management">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Project management</p>
+            <h2>Everything you need to manage your portfolio properly.</h2>
+          </div>
+          <p class="subtitle">
+            Stay on top of your work with a lightweight command center built into your portfolio.
+            Track deliverables, gather feedback, and keep finances visible without extra tools.
+          </p>
+        </div>
+        <div class="manage-grid">
+          <article class="manage-card">
+            <div>
+              <h3>Project tracker</h3>
+              <p>Plan sprints, assign tasks, and monitor progress across every active client.</p>
             </div>
-            <button class="primary">Open live site</button>
-            <button class="ghost">Copy link</button>
+            <ul>
+              <li>Milestone timelines</li>
+              <li>Status tags</li>
+              <li>Weekly summaries</li>
+            </ul>
+          </article>
+          <article class="manage-card">
+            <div>
+              <h3>Client hub</h3>
+              <p>Centralize notes, meeting recaps, and approvals so everyone stays informed.</p>
+            </div>
+            <ul>
+              <li>Feedback archives</li>
+              <li>Decision logs</li>
+              <li>Shareable briefs</li>
+            </ul>
+          </article>
+          <article class="manage-card">
+            <div>
+              <h3>Finance snapshot</h3>
+              <p>Track invoices, retainers, and upcoming payments without spreadsheets.</p>
+            </div>
+            <ul>
+              <li>Auto reminders</li>
+              <li>Payment status</li>
+              <li>Monthly totals</li>
+            </ul>
+          </article>
+        </div>
+        <div class="ops-board">
+          <div class="ops-column">
+            <div class="ops-header">
+              <h3>In progress</h3>
+              <span>5 tasks</span>
+            </div>
+            <div class="ops-card">
+              <strong>Seaside Wellness</strong>
+              <p>Finalize onboarding flow screens and update prototype.</p>
+              <span class="chip">Due Thu</span>
+            </div>
+            <div class="ops-card">
+              <strong>Clarity CRM</strong>
+              <p>Compile usability notes and identify quick-win updates.</p>
+              <span class="chip">Client review</span>
+            </div>
+          </div>
+          <div class="ops-column">
+            <div class="ops-header">
+              <h3>Upcoming</h3>
+              <span>3 tasks</span>
+            </div>
+            <div class="ops-card">
+              <strong>Brightside Labs</strong>
+              <p>Kickoff discovery workshop with leadership team.</p>
+              <span class="chip">Mon 10:00</span>
+            </div>
+            <div class="ops-card">
+              <strong>Internal ops</strong>
+              <p>Send April invoices and confirm retainer renewals.</p>
+              <span class="chip">Finance</span>
+            </div>
+          </div>
+          <div class="ops-column">
+            <div class="ops-header">
+              <h3>Completed</h3>
+              <span>8 tasks</span>
+            </div>
+            <div class="ops-card">
+              <strong>Studio Pulse</strong>
+              <p>Updated growth dashboard and shared walkthrough video.</p>
+              <span class="chip">Delivered</span>
+            </div>
+            <div class="ops-card">
+              <strong>Personal brand</strong>
+              <p>Published new case study and refreshed social kit.</p>
+              <span class="chip">Live</span>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured projects</p>
+            <h2>Selected work with measurable outcomes.</h2>
+          </div>
+          <p class="subtitle">
+            Every engagement is rooted in a clear goal, a thoughtful system, and a dedicated launch
+            plan that scales with the team.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Studio Pulse</h3>
+            <p>
+              Rebuilt the onboarding flow for a wellness platform, boosting conversion by 32% and
+              reducing churn within the first 14 days.
+            </p>
+            <div class="tags">
+              <span>Product design</span>
+              <span>UX research</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Clarity CRM</h3>
+            <p>
+              Delivered a modular dashboard and design system for a SaaS team, enabling weekly
+              feature launches without regressions.
+            </p>
+            <div class="tags">
+              <span>Design systems</span>
+              <span>Strategy</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Brightside Labs</h3>
+            <p>
+              Crafted a brand refresh and responsive website for a biotech startup ahead of their
+              Series A announcement.
+            </p>
+            <div class="tags">
+              <span>Branding</span>
+              <span>Web design</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Capabilities</p>
+            <h2>A complete stack for product growth.</h2>
+          </div>
+          <p class="subtitle">
+            From strategy workshops to polished handoff, each engagement is tailored to keep teams
+            moving confidently from idea to launch.
+          </p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Discovery</h3>
+            <p>User research, journey mapping, and prioritization workshops.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Design</h3>
+            <p>Wireframes, prototypes, and high-fidelity design systems.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Launch</h3>
+            <p>Rollout plans, stakeholder reviews, and growth experiments.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Enablement</h3>
+            <p>Documentation, templates, and training for internal teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div>
+          <h2>Ready to build your next flagship experience?</h2>
+          <p class="subtitle">
+            Let’s map out a plan, align your stakeholders, and ship a portfolio-worthy product with
+            confidence.
+          </p>
+        </div>
+        <button class="primary">Start a project</button>
+      </section>
+
       <footer class="footer">
         <div>
-          <strong>Discode Item Studio</strong>
-          <span>Built for creators and collectors.</span>
+          <strong>Aria Nguyen</strong>
+          <span>Designing focused product experiences for growth teams.</span>
         </div>
         <nav>
-          <a href="#">Docs</a>
-          <a href="#">Support</a>
-          <a href="#">Status</a>
+          <a href="#">Case studies</a>
+          <a href="#">Process</a>
+          <a href="#">Contact</a>
         </nav>
       </footer>
     </main>
